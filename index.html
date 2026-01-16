@@ -89,17 +89,36 @@
     <title>Galería Virtual de Arte Venezolano 🇻🇪</title>
   </head>
   <body>
-    <header>
-      <h1>Arte y Colores de Venezuela 🎨</h1>
-    </header>
+  
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          🎨 Galería Virtual de Arte Venezolano
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#obras-destacadas">Obras Destacadas</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
 
     <main class="container">
       <section id="introduccion">
-        <h2>Bienvenidos a la Galería</h2>
-        <p>
+        <h1 style="margin-top: 100px;">Bienvenidos a la Galería</h1>
+        <h4>
           Explora la diversidad, el talento y la historia capturada por los
           artistas clásicos venezolanos.
-        </p>
+        </h4>
       </section>
 
       <section id="selector-artistas">
@@ -147,14 +166,37 @@
                 data-artista="Armando Reveron"
                 data-url="Assets/armando_reveron.html"
               >
-                <img
-                  src="https://cdn.culturagenial.com/es/imagenes/reveron-0-cke.jpg?class=article"
-                  class="d-block w-100"
-                  alt="La Cueva - Armando Reveron"
-                />
-                <div class="artista-overlay">
-                  <div class="artista-name">Armando Reverón</div>
-                  <button class="artista-action">Ver Galería Completa</button>
+                <div class="carousel-image-container">
+                  <img
+                    src="https://cdn.culturagenial.com/es/imagenes/reveron-0-cke.jpg?class=article"
+                    class="d-block w-100"
+                    alt="La Cueva - Armando Reveron"
+                  />
+                  <!-- Overlay de información al hacer hover -->
+                  <div class="artista-hover-info">
+                    <div class="artista-hover-title">Armando Reverón</div>
+                    <p class="artista-hover-description">
+                      Considerado uno de los artistas más importantes de Venezuela del siglo XX. 
+                      Reconocido por su estudio de la luz y sus pinturas blanquecinas.
+                    </p>
+                    <div class="artista-hover-details">
+                      <div class="artista-detail-item">
+                        <span class="artista-detail-label">Período</span>
+                        <span class="artista-detail-value">1889-1954</span>
+                      </div>
+                      <div class="artista-detail-item">
+                        <span class="artista-detail-label">Estilo</span>
+                        <span class="artista-detail-value">Impresionismo</span>
+                      </div>
+                      <div class="artista-detail-item">
+                        <span class="artista-detail-label">Obra destacada</span>
+                        <span class="artista-detail-value">"La Cueva"</span>
+                      </div>
+                    </div>
+                    <p class="artista-hover-instruction">Haz clic para visitar la galería del artista</p>
+                  </div>
+                  <div class="artista-overlay">
+                  </div>
                 </div>
               </div>
               
@@ -163,14 +205,38 @@
                 data-artista="Arturo Michelena"
                 data-url="Assets/arturo_michelena.html"
               >
-                <img
-                  src="http://radiomundial.com.ve/wp-content/uploads/2016/07/arturo.jpeg"
-                  class="d-block w-100"
-                  alt="Las Queseras del Medio - Arturo Michelena"
-                />
-                <div class="artista-overlay">
-                  <div class="artista-name">Arturo Michelena</div>
-                  <button class="artista-action">Ver Galería Completa</button>
+                <div class="carousel-image-container">
+                  <img
+                    src="https://www.el-carabobeno.com/wp-content/uploads/2018/06/arturo-michelena-1-1024x799.jpg"
+                    class="d-block w-100"
+                    alt="Las Queseras del Medio - Arturo Michelena"
+                  />
+                  <!-- Overlay de información al hacer hover -->
+                  <div class="artista-hover-info">
+                    <div class="artista-hover-title">Arturo Michelena</div>
+                    <p class="artista-hover-description">
+                      Pintor venezolano conocido por sus obras históricas y retratos. 
+                      Fue uno de los primeros artistas venezolanos en alcanzar fama internacional.
+                    </p>
+                    <div class="artista-hover-details">
+                      <div class="artista-detail-item">
+                        <span class="artista-detail-label">Período</span>
+                        <span class="artista-detail-value">1863-1898</span>
+                      </div>
+                      <div class="artista-detail-item">
+                        <span class="artista-detail-label">Estilo</span>
+                        <span class="artista-detail-value">Realismo histórico</span>
+                      </div>
+                      <div class="artista-detail-item">
+                        <span class="artista-detail-label">Obra destacada</span>
+                        <span class="artista-detail-value">"Las Queseras del Medio"</span>
+                      </div>
+                    </div>
+                    <p class="artista-hover-instruction">Haz clic para visitar la galería del artista</p>
+                  </div>
+                  <!-- Overlay original -->
+                  <div class="artista-overlay">
+                  </div>
                 </div>
               </div>
               
@@ -179,14 +245,38 @@
                 data-artista="Cristóbal Rojas"
                 data-url="Assets/cristobal_rojas.html"
               >
-                <img
-                  src="https://primicias24.s3.amazonaws.com/public/uploads/2020/12/Cristobal_Rojas.jpg"
-                  class="d-block w-100"
-                  alt="Autorretrato con sombrero rojo - Cristóbal Rojas"
-                />
-                <div class="artista-overlay">
-                  <div class="artista-name">Cristóbal Rojas</div>
-                  <button class="artista-action">Ver Galería Completa</button>
+                <div class="carousel-image-container">
+                  <img
+                    src="https://primicias24.s3.amazonaws.com/public/uploads/2020/12/Cristobal_Rojas.jpg"
+                    class="d-block w-100"
+                    alt="Autorretrato con sombrero rojo - Cristóbal Rojas"
+                  />
+                  <!-- Overlay de información al hacer hover -->
+                  <div class="artista-hover-info">
+                    <div class="artista-hover-title">Cristóbal Rojas</div>
+                    <p class="artista-hover-description">
+                      Uno de los más importantes pintores venezolanos del siglo XIX. 
+                      Su obra evolucionó del realismo al impresionismo durante su estancia en París.
+                    </p>
+                    <div class="artista-hover-details">
+                      <div class="artista-detail-item">
+                        <span class="artista-detail-label">Período</span>
+                        <span class="artista-detail-value">1857-1890</span>
+                      </div>
+                      <div class="artista-detail-item">
+                        <span class="artista-detail-label">Estilo</span>
+                        <span class="artista-detail-value">Realismo/Impresionismo</span>
+                      </div>
+                      <div class="artista-detail-item">
+                        <span class="artista-detail-label">Obra destacada</span>
+                        <span class="artista-detail-value">"Autorretrato con sombrero rojo"</span>
+                      </div>
+                    </div>
+                    <p class="artista-hover-instruction">Haz clic para visitar la galería del artista</p>
+                  </div>
+                  <!-- Overlay original -->
+                  <div class="artista-overlay">
+                  </div>
                 </div>
               </div>
               
@@ -195,14 +285,38 @@
                 data-artista="Martín Tovar y Tovar"
                 data-url="Assets/martin_tovar_tovar.html"
               >
-                <img
-                  src="https://estatico.mazo4f.com/1644498117142257410xg.jpg"
-                  class="d-block w-100"
-                  alt="La Batalla de Carabobo - Martín Tovar y Tovar"
-                />
-                <div class="artista-overlay">
-                  <div class="artista-name">Martín Tovar y Tovar</div>
-                  <button class="artista-action">Ver Galería Completa</button>
+                <div class="carousel-image-container">
+                  <img
+                    src="https://estatico.mazo4f.com/1644498117142257410xg.jpg"
+                    class="d-block w-100"
+                    alt="La Batalla de Carabobo - Martín Tovar y Tovar"
+                  />
+                  <!-- Overlay de información al hacer hover -->
+                  <div class="artista-hover-info">
+                    <div class="artista-hover-title">Martín Tovar y Tovar</div>
+                    <p class="artista-hover-description">
+                      Pintor venezolano reconocido por sus obras históricas que retratan 
+                      importantes momentos de la independencia de Venezuela.
+                    </p>
+                    <div class="artista-hover-details">
+                      <div class="artista-detail-item">
+                        <span class="artista-detail-label">Período</span>
+                        <span class="artista-detail-value">1827-1902</span>
+                      </div>
+                      <div class="artista-detail-item">
+                        <span class="artista-detail-label">Estilo</span>
+                        <span class="artista-detail-value">Pintura histórica</span>
+                      </div>
+                      <div class="artista-detail-item">
+                        <span class="artista-detail-label">Obra destacada</span>
+                        <span class="artista-detail-value">"La Batalla de Carabobo"</span>
+                      </div>
+                    </div>
+                    <p class="artista-hover-instruction">Haz clic para visitar la galería del artista</p>
+                  </div>
+                  <!-- Overlay original -->
+                  <div class="artista-overlay">
+                  </div>
                 </div>
               </div>
             </div>
@@ -218,7 +332,7 @@
         </div>
       </section>
 
-      <section id="galeria">
+      <section id="galeria" id="obras-destacadas">
         <h2>Obras Destacadas</h2>
         
         <div class="row">
@@ -279,8 +393,8 @@
 
     <footer class="bg-dark text-white py-4 mt-5">
       <div class="container">
-        <p class="mb-0">&copy; 2026 Galería de Arte Venezolano | Contacto: info@galeria.ve</p>
-        <p class="mb-0">Síguenos en <a href="#" class="text-warning">@ArteyColoresdeVenezuela</a></p>
+        <p class="mb-0">&copy; 2026 Galería de Arte Venezolano | Contactanos en</p>
+        <p class="mb-0">Redes Sociales: <a href="http://www.instagram.com/ricardo.vegas.391?igsh=yw9nZGpmeW03czRs" class="text-warning">@ArteyColoresdeVenezuela</a></p>
       </div>
     </footer>
 
@@ -288,30 +402,102 @@
       document.addEventListener('DOMContentLoaded', function() {
         const carouselItems = document.querySelectorAll('#carouselArtistas .carousel-item');
         
-        carouselItems.forEach(item => {
-
-          item.addEventListener('click', function(e) {
-
-            
-            if (!isControl) {
-              e.stopPropagation();
-              const url = this.getAttribute('data-url');
-              if (url) {
-                window.location.href = url;
-              }
-            }
+        // Pausar el carrusel al hacer hover para facilitar la lectura
+        const carousel = document.getElementById('carouselArtistas');
+        if (carousel) {
+          const carouselInstance = new bootstrap.Carousel(carousel);
+          
+          carousel.addEventListener('mouseenter', function() {
+            carouselInstance.pause();
           });
           
-
-          const actionBtn = item.querySelector('.artista-action');
-          if (actionBtn) {
-            actionBtn.addEventListener('click', function(e) {
-              e.stopPropagation();
-              const url = item.getAttribute('data-url');
+          carousel.addEventListener('mouseleave', function() {
+            carouselInstance.cycle();
+          });
+          
+          // Añadir manejadores de clic a las imágenes del carrusel
+          const carouselImages = document.querySelectorAll('.carousel-image-container');
+          carouselImages.forEach(container => {
+            container.addEventListener('click', function(e) {
+              // Verificar si el clic fue en el botón de acción
+              if (e.target.classList.contains('artista-action') || 
+                  e.target.closest('.artista-action')) {
+                return; // Dejar que el botón maneje su propio clic
+              }
+              
+              // Verificar si el clic fue en un control del carrusel
+              if (e.target.closest('.carousel-control-prev, .carousel-control-next, .carousel-indicators')) {
+                return; // Dejar que Bootstrap maneje los controles
+              }
+              
+              // Solo hacer clic en la imagen misma
+              const carouselItem = this.closest('.carousel-item');
+              const url = carouselItem.getAttribute('data-url');
               if (url) {
                 window.location.href = url;
               }
             });
+          });
+          
+          // Manejador para el botón de acción
+          const actionButtons = document.querySelectorAll('.artista-action');
+          actionButtons.forEach(button => {
+            button.addEventListener('click', function(e) {
+              e.stopPropagation();
+              const carouselItem = this.closest('.carousel-item');
+              const url = carouselItem.getAttribute('data-url');
+              if (url) {
+                window.location.href = url;
+              }
+            });
+          });
+        }
+        
+        // Smooth scroll para los enlaces del menú
+        document.querySelectorAll('.nav-link').forEach(link => {
+          link.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href').substring(1);
+            let targetElement;
+            
+            if (targetId === 'inicio') {
+              targetElement = document.querySelector('header');
+            } else if (targetId === 'obras-destacadas') {
+              targetElement = document.querySelector('#galeria');
+            }
+            
+            if (targetElement) {
+              window.scrollTo({
+                top: targetElement.offsetTop - 70,
+                behavior: 'smooth'
+              });
+              
+              // Actualizar clase activa
+              document.querySelectorAll('.nav-link').forEach(item => {
+                item.classList.remove('active');
+              });
+              this.classList.add('active');
+            }
+          });
+        });
+        
+        // Actualizar menú activo al hacer scroll
+        window.addEventListener('scroll', function() {
+          const scrollPosition = window.scrollY + 100;
+          
+          const inicioSection = document.querySelector('header');
+          const obrasSection = document.querySelector('#galeria');
+          
+          const navLinks = document.querySelectorAll('.nav-link');
+          
+          if (scrollPosition >= inicioSection.offsetTop && 
+              (obrasSection === null || scrollPosition < obrasSection.offsetTop)) {
+            navLinks[0].classList.add('active');
+            navLinks[1].classList.remove('active');
+          } else if (obrasSection && scrollPosition >= obrasSection.offsetTop) {
+            navLinks[0].classList.remove('active');
+            navLinks[1].classList.add('active');
           }
         });
       });
